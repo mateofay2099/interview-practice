@@ -1,7 +1,17 @@
+import { TitleWithBackButton } from "@/components/common/TitleWithBackButton";
+import { FileTreeViewerSolution } from "@/components/fileTreeViewer/FileTreeViewerSolution";
+
 export default function FileTreeViewer() {
   return (
-    <>
-      <h1>File Tree Viewer</h1>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        gap: "4rem",
+        padding: "2rem",
+      }}
+    >
+      <TitleWithBackButton title="File Tree Viewer" />
       <div>
         Build a file tree viewer.
         <br />
@@ -14,6 +24,8 @@ export default function FileTreeViewer() {
           <li>Basic aesthetics with pure CSS</li>
         </ol>
       </div>
-    </>
+      <h2>Solution:</h2>
+      <FileTreeViewerSolution />
+    </div>
   );
 }
